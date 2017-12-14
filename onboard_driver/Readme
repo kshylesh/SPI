@@ -1,0 +1,18 @@
+Team 26
+Karthik Shylesh Kumar 1213169085
+Dheemanth Bykere Mallikarjun 1213381271
+
+List of files
+1.main_spi.c :C file containg main function and 2 independent threads for LED Matrix data transmission and Ultrasonic sensor distance calculation.
+2.gpio_spi_function.c : C file containing functions GPIO export,set direction,set value,uexport. 
+3.gpio_spi_header.h : Header file containing function declaration and macros
+---------------------------------------------------------------------------------------------------------------------
+Steps for running the program
+---------------------------------------------------------------------------------------------------------------------
+1.Pins used for SPI : MOSI pin IO11, SS pin IO12, CLK pin IO13.
+2.Pins used for Ultrasonic sensor: Echo pin IO5, Trigger pin IO6.
+3.Program runs for 120 seconds and exits,To increase the duration change the global value of MAIN_SLEEP.
+4.Create the executable file <Test_SPI> by using make file (command:Make all)
+5.Transfer the executable file <Test_SPI> to board using the command scp Test_SPI root@<IP_ADDRESS>.
+6.Execute the file using command ./Test_SPI.
+7.To remove executable run command make clean.
